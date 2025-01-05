@@ -56,7 +56,7 @@ unzip /tmp/frontend.zip &>>$LOG_FILE_NAME
 VALIDATE $? "unzipping the frontend code"
 
 cp /home/ec2-user/expense-shell/frontend.config /etc/nginx/default.d/frontend.config
-VALIDATE $? "Copied expense config"
+VALIDATE $? "Copied frontend config"
 
 systemctl restart nginx &>>$LOG_FILE_NAME
 VALIDATE $? "Restarting nginx"
